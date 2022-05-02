@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundamentos - justify-content 01</title>
+    <title>Fundamentos - justify-content</title>
     <style>
         .container{
             max-width: 400px;
@@ -40,9 +40,15 @@
         .flex-around{
             justify-content: space-around;
         }
+
+        .column{
+            flex-direction: column;
+            min-height: 200px;
+        }
     </style>
 </head>
 <body>
+    <h1>ROW</h1>
     <h1>Flex Start</h1>
     <section class="container flex-start">
         <div class="item">1</div>
@@ -84,6 +90,50 @@
         <div class="item">5</div>
     </section>
 
-    
+    <h1>Column</h1>
+
+    <h1>Column Flex Start</h1>
+    <section class="container flex-start column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item 3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </section>
+
+    <h1>Column Flex End</h1>
+    <section class="container flex-end column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item 3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </section>
+    <h1>Column Flex Center</h1>
+    <section class="container flex-center column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item 3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </section>
+
+    <h1>Column Flex Between</h1>
+    <section class="container flex-between column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item 3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </section>
+
+    <h1>Column Flex Around</h1>
+    <section class="container flex-around column">
+        <div class="item">1</div>
+        <div class="item">item 2</div>
+        <div class="item">outro item 3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </section>
 </body>
 </html>
